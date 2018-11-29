@@ -1,0 +1,12 @@
+name: grifon-core
+version: 1.0.0
+description: Grifon Framework Core
+
+deps:
+  jphp-runtime: '*'
+
+devDeps:
+  tester: '*'
+
+sources:
+- src

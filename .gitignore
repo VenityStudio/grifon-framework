@@ -1,0 +1,5 @@
+**/.idea/**
+**/vendor/**
+**/sandbox/**
+**/package-lock.php.yml
+**/tests/tester.json

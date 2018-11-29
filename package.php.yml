@@ -1,0 +1,6 @@
+name: grifon-framework
+version: 1.0.0
+description: Grifon Framework
+
+modules:
+  - core
