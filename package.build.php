@@ -12,6 +12,9 @@ function task_build(Event $e)
 function task_test(Event $e)
 {
     foreach ($e->package()->getAny("modules") as $module)
+    	Tasks::runExternal('./grifon-' . $module, 'install', [], "yes");
+    
+    foreach ($e->package()->getAny("modules") as $module)
     	Tasks::runExternal('./grifon-' . $module, 'test', [], "yes");
 }
 
