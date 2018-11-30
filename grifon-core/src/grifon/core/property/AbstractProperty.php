@@ -15,7 +15,7 @@ abstract class AbstractProperty
      * @param callable $callback
      * @return mixed
      */
-    abstract public function setListener(callable $callback) : void;
+    abstract public function addListener(callable $callback) : void;
 
     /**
      * @return mixed

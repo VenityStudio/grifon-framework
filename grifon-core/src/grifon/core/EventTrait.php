@@ -6,7 +6,7 @@ namespace grifon\core;
 trait EventTrait
 {
     /**
-     * @var callable[]
+     * @var array
      */
     private $events;
 
@@ -17,7 +17,7 @@ trait EventTrait
      * @param callable $callback
      */
     protected function on(string $event, callable $callback) : void {
-        $this->events[$event] = $callback;
+        $this->events[$event][] = $callback;
     }
 
     /**
@@ -35,7 +35,9 @@ trait EventTrait
      * @param string $event
      * @param array $data
      */
-    protected function trigger(string $event, ... $data) : void {
-        if (is_callable($this->events[$event])) call_user_func_array($this->events[$event], $data);
+    protected function trigger(string $eventName, ... $data) : void {
+        if ($this->events[$eventName])
+            foreach ($this->events[$eventName] as $event)
+                if (is_callable($event)) call_user_func_array($event, $data);
     }
 }

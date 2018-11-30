@@ -28,7 +28,7 @@ class StringProperty extends AbstractProperty
      * @param callable $callback
      * @return void
      */
-    public function setListener(callable $callback): void {
+    public function addListener(callable $callback): void {
         $this->on("string-listener", $callback);
     }
 

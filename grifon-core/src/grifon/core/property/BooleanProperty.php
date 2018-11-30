@@ -28,7 +28,7 @@ class BooleanProperty extends AbstractProperty
      * @param callable $callback
      * @return void
      */
-    public function setListener(callable $callback): void {
+    public function addListener(callable $callback): void {
         $this->on("boolean-listener", $callback);
     }
 
