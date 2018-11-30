@@ -29,7 +29,7 @@ class StringProperty extends AbstractProperty
      * @return void
      */
     public function addListener(callable $callback): void {
-        $this->on("string-listener", $callback);
+        $this->bind("string-listener", $callback);
     }
 
     /**

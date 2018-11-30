@@ -29,7 +29,7 @@ class IntegerProperty extends AbstractProperty
      * @return void
      */
     public function addListener(callable $callback): void {
-        $this->on("integer-listener", $callback);
+        $this->bind("integer-listener", $callback);
     }
 
     /**

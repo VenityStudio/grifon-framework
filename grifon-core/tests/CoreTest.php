@@ -6,6 +6,7 @@ use tester\TestCase;
 use grifon\core\property\IntegerProperty;
 use grifon\core\property\StringProperty;
 use grifon\core\property\BooleanProperty;
+use grifon\core\property\ArrayProperty;
 
 class CoreTest extends TestCase
 {
@@ -26,8 +27,14 @@ class CoreTest extends TestCase
         $str->addListener(function(string $old, string $new) { echo "old string: ", $old, " new string: ", $new, "\n"; });
         $str->setValue("Grifon");
 
+        // array
+        $arr = new ArrayProperty([ 14, 41 ]);
+        $arr->addListener(function (array $old, array $new) { echo "old ", var_export($old, true), " new ", var_export($new, true), "\n"; });
+        $arr->setValue([ 15, 51 ]);
+
         Assert::isEqual(56, $int->getValue());
         Assert::isEqual(true, $bool->getValue());
         Assert::isEqual("Grifon", $str->getValue());
+        Assert::isEqual([ 15, 51 ], $arr->getValue());
     }
 }

@@ -16,7 +16,7 @@ trait EventTrait
      * @param string $event
      * @param callable $callback
      */
-    protected function on(string $event, callable $callback) : void {
+    protected function bind(string $event, callable $callback) : void {
         $this->events[$event][] = $callback;
     }
 
