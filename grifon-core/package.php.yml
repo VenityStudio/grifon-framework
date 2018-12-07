@@ -9,4 +9,4 @@ devDeps:
   tester: '*'
 
 sources:
-- src
+  - src

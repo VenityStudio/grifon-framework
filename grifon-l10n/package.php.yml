@@ -1,0 +1,13 @@
+name: grifon-l10n
+version: 1.0.0
+description: Grifon localization module
+
+deps:
+  grifon-core: '*'
+  jphp-yaml-ext: '*'
+
+devDeps:
+  tester: '*'
+
+sources:
+  - src
