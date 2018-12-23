@@ -1,4 +1,4 @@
-<center><img src="https://psv4.userapi.com/c848036/u506640354/docs/d1/e2cfba5c4321/Splash2x.png?extra=DzSLWzmfmCZduUHTDbIiLvlQFUcRwPpj2LmHiQMe3yT9IxAX70QTLJaS8FF4C07ae8U15TSvJ1fg7FxQcAj2iu2iwIMcbWyB-75dC7MsYZP3boz1KUek-XzvlHlqYa3vpiw3xtlIKApxbkjw3ahEIpB6"/></center>
+<center><img src="https://psv4.userapi.com/c848424/u506640354/docs/d2/30e270503803/Splash1x.png?extra=qsRu1WsLNivNrquc1xeddIext4g3DZG6mCVO86rz-b35gLHZdmvsOOTL-rjKWdCMvtBpYiDecxVPbI7EWttNJpm9LkcdXSVLGdWPi8O0POcakub1LWlnUmdtWvEOG6G8LS5kzK_Xecljf1dayDT4sd8O"/></center>
 
 ## Grifon
 
