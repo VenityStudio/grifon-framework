@@ -5,3 +5,4 @@ description: Grifon Framework
 modules:
   - core
   - l10n
+  - android

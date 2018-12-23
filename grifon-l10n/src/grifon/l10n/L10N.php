@@ -5,7 +5,8 @@ namespace grifon\l10n;
 use grifon\core\EventTrait;
 use grifon\core\property\StringProperty;
 use php\lang\System;
-use php\lib\fs;
+use php\lib\str;
+use php\io\Stream;
 
 class L10N
 {
@@ -92,6 +93,6 @@ class L10N
      * @throws \php\io\IOException
      */
     public static function loadFromFile(string $lang, string $file): void {
-        foreach (fs::parseAs($file, "yaml") as $key => $word) L10N::getInstance()->putWord($lang, (string) $key, (string) $word);
+        foreach (str::parseAs(Stream::getContents($file), "yaml") as $key => $word) L10N::getInstance()->putWord($lang, (string) $key, (string) $word);
     }
 }

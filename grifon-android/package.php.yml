@@ -1,0 +1,10 @@
+name: grifon-android
+version: 1.0.0
+description: Android module for grifon framework
+
+sources:
+  - src
+
+deps:
+  jphp-android-ext: "*"
+  grifon-core: "*"
