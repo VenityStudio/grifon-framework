@@ -29,7 +29,7 @@ abstract class AbstractWindow
      * @param string $massage
      * @param int $guardian
      */
-    public function toast(string $massage, int $guardian = 0) {
+    public function toast(string $massage, int $guardian = null) {
         Toast::make($massage, $guardian)->show();
     }
 }

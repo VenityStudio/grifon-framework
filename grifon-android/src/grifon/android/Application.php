@@ -56,6 +56,8 @@ class Application
         $this->currentWindow->__activity = $activity;
         $this->currentWindow->init();
         $activity->setTitle($this->currentWindow->getTitle());
-        $activity->setContentView($this->currentWindow->makeUI());
+
+        if ($mainView = $this->currentWindow->makeUI())
+            $activity->setContentView($mainView);
     }
 }
